@@ -97,5 +97,4 @@ Scoring using Root Mean Squared Error/RMSE (the lesser the better).</p>
   <li>Default model RMSE<sub>training</sub> (&ycirc; is predicted using model without hyperparameter tuning) is 1.54</li>
   <li>Final model RMSE<sub>training</sub> (&ycirc; is predicted using model after hyperparameter tuning)</li>
   <li>Final score on Kaggle computed using RMSE<sub>test</sub> is 1.007 (winning solution score is 0.881)</li>
-  !(D:\python3\projects\google analytics prediction\score_g.png)
 </ul>
