@@ -1,7 +1,8 @@
+Data for this notebook can be downloaded <a href="https://www.kaggle.com/c/ga-customer-revenue-prediction/data">here</a> (use the v2 data)
 <h3>What To Predict?</h3>
 <hr>
-The natural log of the sum of all transactions per user.
-<br><br>
+The natural log of the sum of all transactions per user
+<br>
 
 <h3>What Features Are in The Data?</h3>
 <hr>
@@ -81,11 +82,21 @@ The natural log of the sum of all transactions per user.
 
 <h3>Data Cleaning and Wrangling</h3>
 <hr>
-<br><br>
-
-<h3>EDA</h3>
-<hr>
+<ul>
+  <li>Exclude features that don't have unique value</li>
+  <li>Label Encode categorical values</li>
+  <li>Aggregate value per user (mean, std, or sum for numerical features and median for categorical features)</li>
+  <li>Transform training data to DMatrix form for XGBoost input</li>
+</ul>
 <br><br>
 
 <h3>Modeling</h3>
 <hr>
+<p>Using XGBoost Regressor with Cross Validation to find out best hyperparameters and predict target.<br>
+Scoring using Root Mean Squared Error/RMSE (the lesser the better).</p>
+<ul>
+  <li>Baseline RMSE<sub>training</sub> (&ycirc; =  mean(y<sub>training</sub>)) is 1.954</li>
+  <li>Default model RMSE<sub>training</sub> (&ycirc; is predicted using model without hyperparameter tuning) is 1.54</li>
+  <li>Final model RMSE<sub>training</sub> (&ycirc; is predicted using model after hyperparameter tuning)</li>
+  <li>Final score on Kaggle computed using RMSE<sub>test</sub> is 1.007 (winning solution score is 0.881)</li>
+</ul>
