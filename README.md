@@ -78,7 +78,6 @@ The natural log of the sum of all transactions per user
     <td>This set of columns mostly includes high-level aggregate data.</td>
   </tr>
 </table>
-<br><br>
 
 <h3>Data Cleaning and Wrangling</h3>
 <hr>
@@ -88,7 +87,6 @@ The natural log of the sum of all transactions per user
   <li>Aggregate value per user (mean, std, or sum for numerical features and median for categorical features)</li>
   <li>Transform training data to DMatrix form for XGBoost input</li>
 </ul>
-<br><br>
 
 <h3>Modeling</h3>
 <hr>
